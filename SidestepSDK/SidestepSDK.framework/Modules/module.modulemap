@@ -1,0 +1,10 @@
+framework module SidestepSDK {
+  umbrella header "SidestepSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module SidestepSDK.Swift {
+    header "SidestepSDK-Swift.h"
+}
