@@ -2,6 +2,9 @@ Pod::Spec.new do |spec|
     spec.name = 'SidestepSDK'
     spec.version = '1.0.0'
     spec.platform = :ios
+    spec.summary = 'Sidestep iOS SDK'
+    spec.homepage = 'https://github.com/SidestepTechnologies/ios-sdk'
+    spec.authors = { 'Sidestep' }
     spec.source = { :git => 'git@github.com:SidestepTechnologies/ios-sdk.git' }
     spec.source_files = 'SidestepSDK'
     spec.requires_arc = true
