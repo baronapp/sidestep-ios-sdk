@@ -36,6 +36,8 @@ Simply add this to you Podfile:
 
 ### Other
 
+SidestepSDK framework should be added to Embedded Binaries in your project.
+
 Our SKD has dependency to the next libraries. So if you add our framework to your project you need to add those libraries as well.
 ```
 'Alamofire', '~> 3.3.1'
