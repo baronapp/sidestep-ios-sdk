@@ -1,7 +1,14 @@
 # ios-sdk
 iOS SDK for the store used by 3rd parties and eventually our own apps. It allows you to display a store in  your app for a selected artist. For example, if you are the developer of the Fall Out Boy app, you can implement the SDK to allow customers to purchase for Fall Out Boy merchandise without leaving your app. 
 
+### How it works?
+You can simply install the SDK into your app. Inside your app you can show artist store to the user at any moment, you just need to add few lines of code inside your app. 
+You can set up the SDK this way, if the user already has Sidestep app on his device it will be opened. Or you can always show artist store inside your app if you don't want user leaves your app.
 
+### How are updates handled?
+We will update iOS SDK constantly and we will support older versions as much as possible. But if SDK version is very old and we don't support it anymore, it will not make affect to your app.  In this case instead of showing native artist store we will show the web version of artist store. The web version is always up to date.
+
+### How to implement SDK?
 To implement SDK into your app use SidestepSDK class.
 It contains following:
 
