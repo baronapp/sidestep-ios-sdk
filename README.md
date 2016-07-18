@@ -1,39 +1,41 @@
-# ios-sdk
-iOS SDK for the store used by 3rd parties and eventually our own apps. It allows you to display a store in  your app for a selected artist. For example, if you are the developer of the Fall Out Boy app, you can implement the SDK to allow customers to purchase for Fall Out Boy merchandise without leaving your app. 
+# Sidestep iOS SDK
+The Sidestep SDK is used to display an artist's store inside of an iOS app. For example, if you are the developer of the Fall Out Boy app, you can implement the SDK to allow customers to purchase for Fall Out Boy merchandise without leaving your app. 
 
-### How it works?
-You can simply install the SDK into your app. Inside your app you can show artist store to the user at any moment, you just need to add few lines of code inside your app. 
-You can set up the SDK this way, if the user already has Sidestep app on his device it will be opened. Or you can always show artist store inside your app if you don't want user leaves your app.
+### How does it work?
+You can install the SDK into your app via cocoa pods, carthage, or by dragging & dropping the SDK into Xcode. With just a few lines of code, you can launch the Sidestep store inside of your app. There are two ways to show the store:
+
+1. By launching the Sidestep app if your user has the Sidstep app installed
+2. By launching the Sidstep store inside of your app without the user leaving your app.
 
 ### How are updates handled?
-We will update iOS SDK constantly and we will support older versions as much as possible. But if SDK version is very old and we don't support it anymore, it will not make affect to your app.  In this case instead of showing native artist store we will show the web version of artist store. The web version is always up to date.
+We are constantly updating the iOS SDK and we will support older versions as much as possible. If the SDK becomes out of date or obselete, the SDk will automatically show the webstore version of the artist's store to prevent a broken user experience. We think this is a great solution. 
 
-### How to implement SDK?
-To implement SDK into your app use SidestepSDK class.
+### How do you implement the Sidestep iOS SDK? [for your developer]
+To implement SDK into your app use `SidestepSDK` class.
 It contains following:
 
 `init(artistId: Int, token: String, allowsNativeApp: Bool = true, useTestingServer: Bool = false)`
 
-For example: `SidestepSDK(artistId:14, token: "ios_consumer_app_token", allowsNativeApp: false)` will automatically launch the Sidestep store in a modal for artist 14. You can get the token by emailing <support@sidestepapp.com>.
+For example: `SidestepSDK(artistId:14, token: "ios_consumer_app_token", allowsNativeApp: false)` will automatically launch the Sidestep store in a modal for artist 14. You can get your token and the artist id by emailing <matt@@sidestepapp.com>.
 
-artistId - identifier of artist that will be shown in SDK
+`artistId` - identifier of artist that will be shown in SDK
 
-token - token for using the SDK
+`token` - token for using the SDK
 
-allowsNativeApp - optional, default - true, provide false if you don't want to open artist store in Sidestep app (if it's installed on device)
+`allowsNativeApp` - optional, default:  true, provide false if you don't want to open artist store in Sidestep app (if it's installed on device)
 
-useTestingServer - optional, default - false, provide true if you want to use our testing server
+`useTestingServer` - optional, default: false, provide true if you want to use our testing server
 
 `var navigationController: UINavigationController?`
 
-navigationController - present this controller in your application
+`navigationController` - present this controller in your application
 
 
 `var closeBlock: (() -> Void)?`
 
 the handler of the action when user taps close button in SDK stack
 
-# install SDK
+# Installing the SDK
 
 ### CocoaPods
 
