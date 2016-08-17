@@ -58,3 +58,8 @@ Our SDK has the following depdencies. If you add the `SidestepSDK.framework` to 
 'CardIO', '~> 5.2.2'
 'Stripe', '~> 6.0.1'
 ```
+
+
+### License
+
+License available [here](https://github.com/SidestepTechnologies/ios-sdk/blob/master/LICENSE). 
