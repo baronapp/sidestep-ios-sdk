@@ -41,7 +41,7 @@ the handler of the action when user taps close button in SDK stack
 
 Simply add this to you Podfile:
 
-`pod 'SidestepSDK', :git => 'git@github.com:SidestepTechnologies/ios-sdk.git', :tag => '1.0.0'`
+`pod 'SidestepSDK', :git => 'git@github.com:SidestepTechnologies/ios-sdk.git', :branch => 'swift2.3'`
 
 
 ### Other
@@ -50,12 +50,12 @@ SidestepSDK framework should be added to Embedded Binaries in your project.
 
 Our SDK has the following depdencies. If you add the `SidestepSDK.framework` to your project you need to add these libraries as well:
 ```
-'Alamofire', '~> 3.3.1'
-'SwiftyJSON', '~> 2.3.2'
-'CoreStore', '~> 1.6.3'
-'AlamofireImage', '~> 2.4.0'
+'Alamofire', '~> 3.5.1'
+'SwiftyJSON', '~> 2.4.0'
+'CoreStore', '~> 2.1.2'
+'AlamofireImage', '~> 2.5.0'
 'MBProgressHUD', '~> 0.8'
-'CardIO', '~> 5.2.2'
+'CardIO', '~> 5.4.1'
 'Stripe', '~> 6.0.1'
 ```
 

@@ -10,8 +10,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-static NSString *const kCartDidUpdateNotification = @"CartDidUpdateNotification";
-
 @protocol ObjcListMonitorDelegate;
 
 @interface CartManager : NSObject <ObjcListMonitorDelegate>
@@ -19,5 +17,6 @@ static NSString *const kCartDidUpdateNotification = @"CartDidUpdateNotification"
 
 - (void)resetContext;
 - (NSInteger)numberOfOrderItems;
++ (NSString *)cartDidUpdateNitificationName;
 
 @end
