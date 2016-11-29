@@ -13,8 +13,6 @@
 
 @class Artist;
 @class Product;
-@class ObjcListMonitor;
-@protocol ObjcListMonitorDelegate;
 
 @protocol ProductDetailsOtherProductsDelegate <NSObject>
 @optional
@@ -24,12 +22,12 @@
 
 @interface ProductDetailsOtherProductsDataSource : NSObject
         <UICollectionViewDataSource, UICollectionViewDelegate,
-        ObjcListMonitorDelegate, UICollectionViewDelegateFlowLayout>
+        NSFetchedResultsControllerDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) id<ProductDetailsOtherProductsDelegate> delegate;
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView
-                       andObjcListMonitor:(ObjcListMonitor *)objcListMonitor
+                                   frc:(NSFetchedResultsController *)frc
                                   currency:(NSString *)currency;
 
 @end

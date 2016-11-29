@@ -10,14 +10,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-static NSString *const kCartDidUpdateNotification = @"CartDidUpdateNotification";
+@protocol FRCFactoryDelegate;
 
-@protocol ObjcListMonitorDelegate;
-
-@interface CartManager : NSObject <ObjcListMonitorDelegate>
+@interface CartManager : NSObject <NSFetchedResultsControllerDelegate>
 + (instancetype)sharedManager;
 
 - (void)resetContext;
 - (NSInteger)numberOfOrderItems;
++ (NSString *)cartDidUpdateNitificationName;
 
 @end

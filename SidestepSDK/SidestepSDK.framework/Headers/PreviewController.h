@@ -12,6 +12,9 @@
 
 @property(nonatomic, strong) UIViewController *contentController;
 
+@property(nonatomic, copy) void (^hideStateAnimationBlock)();
+@property(nonatomic, copy) void (^showStateAnimationBlock)();
+
 - (instancetype)initWithContentView:(UIView *)view;
 
 - (instancetype)initWithContentController:(UIViewController *)controller;

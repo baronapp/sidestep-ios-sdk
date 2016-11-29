@@ -11,6 +11,6 @@
 
 @protocol SSCheckoutFlowProtocol <NSObject>
 @required
-@property (copy)void (^next)();
-@property (copy)void (^back)();
+@property (copy)void (^nextBlock)();
+@property (copy)void (^backBlock)();
 @end

@@ -27,4 +27,6 @@
 
 - (NSUInteger)selectedSize;
 
+- (void)setSizes:(NSArray *)sizes andPrices:(NSArray *)prices;
+
 @end

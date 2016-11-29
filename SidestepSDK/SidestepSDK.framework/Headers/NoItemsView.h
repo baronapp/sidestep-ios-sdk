@@ -13,11 +13,11 @@ typedef void(^ActionBlock)();
 
 @interface NoItemsView : UIView
 
-@property (nonatomic, strong) NSString *messageText;
+@property (nonatomic, strong) NSString * __nullable messageText;
 
-+ (instancetype)new;
++ (__nonnull instancetype)new;
 
-- (void)setButtonTitle:(NSString *)buttonTitle action:(ActionBlock)action;
+- (void)setButtonTitle:(NSString * __nullable)buttonTitle action:(ActionBlock __nullable)action;
 
 - (void)setActionButtonHidden:(BOOL)hidden;
 

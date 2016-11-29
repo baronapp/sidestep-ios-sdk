@@ -19,7 +19,6 @@
 #import "SSProgressHUD.h"
 #import "CartManager.h"
 #import "PreviewController.h"
-#import "ProductDetailsProductCell.h"
 #import "ProductDetailsVariantPickerCell.h"
 #import "ProductDescriptionTVCell.h"
 #import "CartButton.h"
@@ -43,7 +42,6 @@
 #import "UITextField+CursorPosition.h"
 #import "SizePickerCell.h"
 #import "UIImage+Resizing.h"
-#import "ProductCell.h"
 
 
 

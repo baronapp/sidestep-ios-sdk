@@ -10,9 +10,10 @@
 #import <Foundation/Foundation.h>
 #import "AbstractPickerCell.h"
 
-@class AbstractPickerView;
+@class AbstractPickerView, BluredView;
+@protocol BluredModalController;
 
-@interface AbstractPickerController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface AbstractPickerController : UIViewController <UITableViewDataSource, UITableViewDelegate, BluredModalController>
 
 - (instancetype)init;
 
@@ -21,6 +22,8 @@
 @property(copy) void (^completionBlock)(id selectedItem);
 
 @property(nonatomic, strong) NSString *pickerTitle;
+
+@property(nonatomic, strong, readonly) BluredView *bluredView;
 
 - (void)setPickerTitle:(NSString *)pickerTitle;
 

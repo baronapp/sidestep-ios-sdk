@@ -8,20 +8,19 @@
 #import <UIKit/UIKit.h>
 
 @class ProductDetailsOtherProductsDataSource;
-@class ObjcListMonitor;
+@class FRCFactory;
 
 @protocol ProductDetailsOtherProductsCellDelegate <NSObject>
 - (void)didSelectProduct:(Product *)product;
 @end
 
-@interface ProductDetailsOtherProductsCell
-    : UITableViewCell <ProductDetailsOtherProductsDelegate>
+@interface ProductDetailsOtherProductsCell: UITableViewCell <ProductDetailsOtherProductsDelegate>
 
 + (NSString *)reuseIdentifier;
 
 + (CGFloat)height;
 
-- (void)setListMonitor:(ObjcListMonitor *)objcListMonitor currency:(NSString *)currency;
+- (void)setFRC:(NSFetchedResultsController *)frc currency:(NSString *)currency;
 
 @property(nonatomic, weak) id<ProductDetailsOtherProductsCellDelegate> delegate;
 

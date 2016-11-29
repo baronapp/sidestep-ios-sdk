@@ -157,5 +157,6 @@ extern UIColor *UIColorWithRGBA(NSUInteger red, NSUInteger green, NSUInteger blu
 + (UIColor *)emptyCellTitleColor;
 
 + (void)configureRoundedWhiteButtonWithBorder:(UIButton *)button;
++ (void)configureRoundedWhiteButtonWithBorder:(UIButton *)button borderColor:(UIColor *)borderColor titleColor:(UIColor *)titleColor;
 
 @end
