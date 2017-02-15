@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = 'SidestepSDK'
-    spec.version = '1.0.2'
+    spec.version = '1.0.3'
     spec.license = { :type => 'Sidestep MIT License'}
     spec.platform = :ios
     spec.summary = 'Sidestep iOS SDK'

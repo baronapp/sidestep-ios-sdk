@@ -14,6 +14,6 @@
 - (CGFloat)contentHeight;
 - (void)displayHTML:(NSString *)htmlString;
 
-@property (nonatomic, copy) void (^didFinishRendering)(ProductDescriptionTVCell *cell);
+@property (nonatomic, copy) void (^didFinishRendering)(ProductDescriptionTVCell *cell, BOOL stringWasChanged);
 
 @end

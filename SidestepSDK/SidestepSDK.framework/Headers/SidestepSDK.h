@@ -29,7 +29,6 @@
 #import "AlertHelper.h"
 #import "ImageZoomController.h"
 #import "TealNavigationController.h"
-#import "InputField.h"
 #import "NSString+Validations.h"
 #import "NSString+Additions.h"
 #import "CardIOManager.h"
@@ -42,6 +41,7 @@
 #import "UITextField+CursorPosition.h"
 #import "SizePickerCell.h"
 #import "UIImage+Resizing.h"
+#import "ArtistsController.h"
 
 
 

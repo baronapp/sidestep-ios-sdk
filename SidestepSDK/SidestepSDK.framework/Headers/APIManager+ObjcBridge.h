@@ -13,7 +13,7 @@
 #endif /* APIManager_ObjcBridge_h */
 
 #import <CoreData/CoreData.h>
-@class Error;
+@class ErrorInfo;
 
 typedef void (^SuccessObjcBlock)(NSArray<NSManagedObject *> * _Nullable objects);
-typedef void (^FailureObjcBlock)(NSHTTPURLResponse * _Nullable response, Error * _Nullable error);
+typedef void (^FailureObjcBlock)(NSHTTPURLResponse * _Nullable response, ErrorInfo * _Nullable error);

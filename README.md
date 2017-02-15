@@ -12,36 +12,38 @@ We are constantly updating the iOS SDK and we will support older versions as muc
 
 ### How do you implement the Sidestep iOS SDK? [for your developer]
 To implement SDK into your app use `SidestepSDK` class.
-It contains following:
-
-`init(artistId: Int, token: String, allowsNativeApp: Bool = true, useTestingServer: Bool = false)`
-
-For example: `SidestepSDK(artistId:14, token: "ios_consumer_app_token", allowsNativeApp: false)` will automatically launch the Sidestep store in a modal for artist 14. You can get your token and the artist id by emailing <matt@@sidestepapp.com>.
-
-`artistId` - identifier of artist that will be shown in SDK
-
-`token` - token for using the SDK
-
-`allowsNativeApp` - optional, default:  true, provide false if you don't want to open artist store in Sidestep app (if it's installed on device)
-
-`useTestingServer` - optional, default: false, provide true if you want to use our testing server
-
-`var navigationController: UINavigationController?`
-
-`navigationController` - present this controller in your application
 
 
-`var closeBlock: (() -> Void)?`
+1. `init(configuration: SidestepSDKConfiguration, token: String, useTestingServer: Bool = false)`, where:
 
-the handler of the action when user taps close button in SDK stack
+ `configuration` - structure that you can use to configure Sidestep SDK. Using this structure you can: 
+  - go straight into the merch for a given artist and show (preselected)  
+  - have ability to support multiple artists
+  - initialize Sidestep SDK with artist as a sting or an artist id
+
+ `token` - token for using the SDK. You can get your token and the artist id by emailing <matt@sidestepapp.com>
+
+ `useTestingServer` - optional, default: false, provide true if you want to use our testing server
+
+
+
+2. `var navigationController: UINavigationController?`
+
+3. `navigationController` - present this controller in your application
+
+4. `var closeBlock: (() -> Void)?` - the handler of the action when user taps close button in SDK stack
+
+### Notes
+  
+To be able to use credit card scanner on checkout process, you need to add `Privacy - Camera Usage Description (NSCameraUsageDescription)` to your application's Info.plist file.
 
 # Installing the SDK
 
 ### CocoaPods
 
-Simply add this to you Podfile:
+Add this to you Podfile:
 
-`pod 'SidestepSDK', :git => 'git@github.com:SidestepTechnologies/ios-sdk.git', :tag => '1.0.2'`
+`pod 'SidestepSDK', :git => 'git@github.com:SidestepTechnologies/ios-sdk.git', :tag => '1.0.3'`
 
 
 ### Other

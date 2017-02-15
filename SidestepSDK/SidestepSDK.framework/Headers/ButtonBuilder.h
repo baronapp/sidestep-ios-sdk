@@ -15,5 +15,5 @@
 
 + (UIBarButtonItem *)backBarButtonItemWithTarget:(id)target andAction:(SEL)action;
 
-+ (UIBarButtonItem *)closeBarButtonItemwithTarget:(id)target andAction:(SEL)action;
++ (UIBarButtonItem *)closeBarButtonItemWithTarget:(id)target andAction:(SEL)action;
 @end
