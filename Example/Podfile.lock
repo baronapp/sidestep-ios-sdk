@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - CardIO (5.4.1)
+  - MBProgressHUD (0.9.2)
+  - PhoneNumberKit (1.3.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 1.3.0)
+    - PhoneNumberKit/UIKit (= 1.3.0)
+  - PhoneNumberKit/PhoneNumberKitCore (1.3.0)
+  - PhoneNumberKit/UIKit (1.3.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - SidestepSDK (1.0.4):
+    - Alamofire (~> 4.0)
+    - AlamofireImage (~> 3.1)
+    - CardIO (~> 5.4)
+    - MBProgressHUD (~> 0.8)
+    - PhoneNumberKit (~> 1.2)
+    - SnapKit (~> 3.2.0)
+    - Stripe (~> 9.0)
+    - SwiftyJSON (~> 3.1)
+  - SnapKit (3.2.0)
+  - Stripe (9.4.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - SidestepSDK (from `../`)
+
+EXTERNAL SOURCES:
+  SidestepSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  PhoneNumberKit: 08aaf1968ea41a114327e9223cbb0391d76ae145
+  SidestepSDK: d301875aa7a915228bc5f659be1f5617ab980aa0
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  Stripe: 0957cc85df5c3df153e6fb44d307ea4b778b6bd1
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 0520f2cf121c200af97dacd2d32b90ae36a52d5b
+
+COCOAPODS: 1.2.0

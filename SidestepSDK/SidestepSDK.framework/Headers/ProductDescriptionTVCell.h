@@ -9,11 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ProductDescriptionTVCell : UITableViewCell <UIWebViewDelegate>
-+ (CGFloat)height;
 + (NSString *)reuseIdentifier;
 - (CGFloat)contentHeight;
 - (void)displayHTML:(NSString *)htmlString;
 
-@property (nonatomic, copy) void (^didFinishRendering)(ProductDescriptionTVCell *cell, BOOL stringWasChanged);
+@property (nonatomic, copy) void (^didFinishRendering)(ProductDescriptionTVCell *cell);
 
 @end

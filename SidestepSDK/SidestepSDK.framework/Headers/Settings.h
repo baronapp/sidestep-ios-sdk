@@ -46,4 +46,8 @@ typedef enum {
 
 + (BOOL)isUsaOrCanada;
 
++ (void)setRateTheAppDate:(NSDate *)date;
+
++ (nullable NSDate *)rateTheAppDate;
+
 @end

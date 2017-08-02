@@ -12,8 +12,7 @@
 
 @property(nonatomic, strong) NSArray *sizes;
 
-@property(nonatomic, copy) void (^didChangeProductVariant)
-    (ProductDetailsVariantPickerCell *);
+@property(nonatomic, copy) void (^didChangeProductVariant)(ProductDetailsVariantPickerCell *);
 
 + (NSString *)reuseIdentifier;
 
@@ -21,12 +20,10 @@
 
 - (void)setDisabledButtons:(NSIndexSet *)disabledButtons;
 
-- (void)updateSegmentedControl;
-
 - (void)setSelectedSize:(NSUInteger)selectedSize;
 
 - (NSUInteger)selectedSize;
 
-- (void)setSizes:(NSArray *)sizes andPrices:(NSArray *)prices;
+- (void)setSizes:(NSArray *)sizes andDisplayableValues:(NSArray *)displayableValues;
 
 @end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = 'SidestepSDK'
-    spec.version = '1.0.3'
+    spec.version = '1.0.4'
     spec.license = { :type => 'Sidestep MIT License'}
     spec.platform = :ios
     spec.summary = 'Sidestep iOS SDK'
@@ -18,4 +18,6 @@ Pod::Spec.new do |spec|
     spec.dependency 'MBProgressHUD', '~> 0.8'
     spec.dependency 'CardIO', '~> 5.4'
     spec.dependency 'Stripe', '~> 9.0'
+    spec.dependency 'SnapKit', '~> 3.2.0'
+    spec.dependency 'PhoneNumberKit', '~> 1.2'
 end
